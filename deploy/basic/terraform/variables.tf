@@ -196,7 +196,7 @@ locals {
 
 # Shapes
 locals {
-  compute_shape_micro = local.compute_platform == "linux/arm64" ? "VM.Standard.A1.Flex" : "VM.Standard.E2.1.Micro"
+  compute_shape_micro = local.compute_platform == "linux/arm64" ? "VM.Standard.E2.1.Micro" : "VM.Standard.E2.1.Micro"
   compute_flexible_shapes = [
     "VM.Standard.E3.Flex",
     "VM.Standard.E4.Flex",
